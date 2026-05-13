@@ -1,0 +1,441 @@
+Create an elite modern professional CV/resume using the data provided below.
+
+The final CV must feel:
+- premium
+- modern
+- psychologically impressive
+- visually intelligent
+- calm and professional
+- startup/developer aesthetic
+- minimal but memorable
+- futuristic without looking flashy
+
+The design must instantly communicate within 3 seconds:
+- modern developer identity
+- intelligence
+- creativity
+- independent builder mindset
+- professionalism
+- strategic thinking
+
+--------------------------------------------------
+CORE DESIGN DIRECTION
+--------------------------------------------------
+
+The resume should combine:
+- modern minimalism
+- classic professionalism
+- psychological visual hierarchy
+- clean developer aesthetics
+- premium spacing
+- subtle cinematic presentation
+
+Visual inspiration:
+- Apple
+- Linear
+- Vercel
+- Notion
+- modern startup portfolios
+
+The design should feel:
+- calm
+- focused
+- sophisticated
+- structured
+- highly readable
+
+Avoid:
+- outdated corporate templates
+- infographic overload
+- gaming aesthetics
+- neon colors
+- overly colorful layouts
+- excessive icons
+- childish progress bars
+- flashy gradients
+- cluttered sections
+
+--------------------------------------------------
+PSYCHOLOGICAL & NEURO DESIGN REQUIREMENTS
+--------------------------------------------------
+
+Use psychologically effective recruiter-friendly colors.
+
+Primary palette:
+- soft white / off-white background
+- charcoal black typography
+- muted gray secondary text
+- subtle graphite or dark navy accents
+
+Optional subtle accent:
+- slate blue
+- muted steel blue
+- dark graphite
+- soft navy
+
+These colors should create:
+- trust
+- intelligence
+- calm professionalism
+- modern sophistication
+- premium perception
+- reduced visual fatigue
+- strong readability
+
+The design must psychologically feel:
+- organized
+- emotionally calm
+- technically competent
+- modern and trustworthy
+
+--------------------------------------------------
+PHOTO / IMAGE PLACEMENT REQUIREMENTS
+--------------------------------------------------
+
+The uploaded profile image must:
+- fit naturally into the layout
+- look professional and premium
+- avoid passport-photo feeling
+- blend into the visual hierarchy elegantly
+
+Recommended placement:
+- top-right hero section
+OR
+- softly aligned right-side profile frame
+
+Image styling:
+- black & white or slightly desaturated
+- clean crop
+- subtle rounded corners
+- soft shadow only if necessary
+- no glow effects
+- no dramatic editing
+
+The image should enhance:
+- professionalism
+- calm confidence
+- modern identity
+
+--------------------------------------------------
+LAYOUT STRUCTURE
+--------------------------------------------------
+
+The resume structure should communicate information visually without relying on large obvious headings everywhere.
+
+Use:
+- typography hierarchy
+- spacing
+- alignment
+- visual grouping
+instead of heavy boxes and borders.
+
+Recommended structure:
+
+1. Hero Identity Section
+- Name
+- Role
+- Short identity statement
+- Professional image
+- Minimal contact row
+
+2. Core Technologies
+- categorized modern layout
+- official logos/icons
+- clean grouping
+
+3. Selected Projects / Achievements
+- practical real-world focus
+- concise impact-driven wording
+
+4. Education & Experience
+- clean professional alignment
+
+5. Interests & Exploration
+- modern tag/chip style
+
+6. Languages
+- elegant segmented proficiency bars
+
+7. Current Learning Focus
+
+--------------------------------------------------
+VISUAL HIERARCHY RULES
+--------------------------------------------------
+
+The CV should naturally guide the recruiter’s eyes in this order:
+
+1. Name
+2. Role / Identity
+3. Technologies
+4. Projects / Achievements
+5. Experience & Education
+6. Interests & Languages
+
+The recruiter should instantly understand:
+- who I am
+- what I build
+- my technical direction
+- my professionalism
+
+without reading large paragraphs.
+
+--------------------------------------------------
+TYPOGRAPHY REQUIREMENTS
+--------------------------------------------------
+
+Use modern premium typography.
+
+Recommended font styles:
+- Inter
+- General Sans
+- Satoshi
+- SF Pro style
+
+Typography should feel:
+- sharp
+- calm
+- readable
+- elegant
+- modern developer-oriented
+
+Use:
+- strong typography hierarchy
+- generous spacing
+- subtle weight contrast
+- minimal visual noise
+
+--------------------------------------------------
+TECHNOLOGY & ICON REQUIREMENTS
+--------------------------------------------------
+
+Use official logos/icons for:
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- MongoDB
+- EJS
+- Microsoft Office
+- AI tools
+
+Use minimal modern icons only where useful:
+- contact information
+- education
+- technologies
+- achievements
+- languages
+
+Icons should feel:
+- subtle
+- premium
+- visually balanced
+
+--------------------------------------------------
+LANGUAGE SECTION REQUIREMENTS
+--------------------------------------------------
+
+Languages must use:
+- elegant segmented progress bars
+- minimal modern indicators
+- premium spacing
+
+Avoid:
+- gaming-style bars
+- stars
+- circles
+- colorful meters
+
+The language section should feel:
+- subtle
+- intelligent
+- modern
+
+--------------------------------------------------
+INTERESTS SECTION STYLE
+--------------------------------------------------
+
+Do NOT create a traditional “Hobbies” section.
+
+Instead create:
+“Interests & Exploration”
+
+Display interests using:
+- modern tags/chips
+- subtle typography
+- minimal spacing
+
+Include:
+- Emerging Technologies
+- Psychology
+- Deep Thinking
+- Independent Learning
+- Creative Development
+- AI Systems Exploration
+
+--------------------------------------------------
+CONTENT TONE REQUIREMENTS
+--------------------------------------------------
+
+The wording should:
+- sound natural
+- feel intelligent
+- avoid robotic AI wording
+- avoid generic student language
+- avoid exaggerated claims
+
+The resume should position me as:
+- a modern creative developer
+- an independent builder
+- an emerging technology-focused learner
+- a practical problem solver
+
+--------------------------------------------------
+MY RESUME DATA
+--------------------------------------------------
+
+Name:
+Khuzaima Asif
+
+Role:
+Full Stack Web Developer
+
+Location:
+Pakistan
+
+Address:
+Link Railway Road, Shahdrah Bahawalpur
+
+Phone:
++92 370 6134825
+
+WhatsApp:
++92 370 6134825
+
+Email:
+khuzaimadeveloper777@gmail.com
+
+Date of Birth:
+02 April 2007
+
+--------------------------------------------------
+PROFESSIONAL IDENTITY
+--------------------------------------------------
+
+Creative Full Stack Developer focused on practical digital solutions, emerging technologies, and independent project development.
+
+Strong interest in:
+- web development
+- creative problem-solving
+- real-world digital systems
+- AI & emerging technologies
+- innovative digital experiences
+
+Focused on building:
+- productive systems
+- impactful digital solutions
+- modern user experiences
+- real-world applications
+
+--------------------------------------------------
+EDUCATION
+--------------------------------------------------
+
+Superior College Bahawalpur
+
+UK Level-3 Diploma in Information Technology & Cybersecurity
+June 2025 – 2026
+
+--------------------------------------------------
+EXPERIENCE
+--------------------------------------------------
+
++1 Year Experience in Web Development
+
+Full Stack Web Developer
+
+--------------------------------------------------
+TECHNOLOGIES
+--------------------------------------------------
+
+Frontend:
+- HTML
+- CSS
+- JavaScript
+
+Backend:
+- Node.js
+- EJS
+
+Database:
+- MongoDB
+
+Other Skills:
+- Microsoft Office
+- AI Tools Knowledge
+- Social Media Marketing
+
+--------------------------------------------------
+CURRENT LEARNING
+--------------------------------------------------
+
+- Vibe Coding
+- Communication Skills
+- AI Systems Exploration
+
+--------------------------------------------------
+LANGUAGES
+--------------------------------------------------
+
+Urdu:
+Advanced
+
+English:
+Upper Intermediate
+
+--------------------------------------------------
+INTERESTS & EXPLORATION
+--------------------------------------------------
+
+- Emerging Technologies
+- Psychology
+- Deep Thinking
+- Independent Learning
+- Creative Development
+- AI Systems Exploration
+
+--------------------------------------------------
+ACHIEVEMENTS
+--------------------------------------------------
+
+- Developed productive and real-world mobile applications
+- Explored AI & emerging technologies
+- Created professional digital presentations
+- Built practical digital solutions through experimentation
+
+--------------------------------------------------
+CORE STRENGTHS
+--------------------------------------------------
+
+- Creative Problem Solving
+- Strategic Thinking
+- Deep Focus
+- Independent Project Development
+- Strong Curiosity for Learning
+- Innovation-Oriented Mindset
+
+--------------------------------------------------
+FINAL OUTPUT REQUIREMENTS
+--------------------------------------------------
+
+1. Deeply improve and organize all content professionally.
+2. Improve wording naturally without making it robotic.
+3. Ensure visual hierarchy is premium and recruiter-friendly.
+4. Make the CV visually impressive while remaining ATS-friendly.
+5. Create a resume that feels:
+   - elite
+   - modern
+   - psychologically polished
+   - calm and intelligent
+   - visually premium
+   - startup-ready
+   - memorable within 3 seconds
