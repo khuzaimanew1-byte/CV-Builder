@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --cv-bg: #F8F7F5;
-  --cv-surface: #FFFFFF;
-  --cv-ink: #111111;
-  --cv-ink-secondary: #6B6B6B;
-  --cv-ink-tertiary: #9E9E9E;
-  --cv-accent: #1E3A5F;
-  --cv-accent-muted: #2D5A8E;
-  --cv-divider: #E5E3DF;
-  --cv-tag-bg: #EFEFED;
-  --cv-tag-text: #444444;
-  --cv-bar-track: #E5E3DF;
-  --cv-bar-fill: #1E3A5F;
+  --cv-bg:           #F7F7F5;
+  --cv-surface:      #FFFFFF;
+  --cv-heading:      #1C1C1C;
+  --cv-body:         #525252;
+  --cv-meta:         #7A7A7A;
+  --cv-accent:       #42526B;
+  --cv-divider:      #D6DCE5;
+  --cv-tag-bg:       #EEF2F6;
+  --cv-tag-text:     #42526B;
+  --cv-bar-fill:     #42526B;
+  --cv-bar-empty:    #D8DEE6;
 }
 
 * {

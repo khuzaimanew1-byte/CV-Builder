@@ -1,0 +1,170 @@
+Update the CV/resume design colors using a psychologically optimized premium color system.
+
+The current resume should be redesigned with colors that create:
+- recruiter trust
+- calm professionalism
+- modern sophistication
+- cognitive clarity
+- premium perception
+- low visual fatigue
+- intelligent visual hierarchy
+
+The design should feel:
+- elite
+- modern
+- minimal
+- psychologically polished
+- startup/developer aesthetic
+- calm and structured
+- visually memorable without being flashy
+
+--------------------------------------------------
+PRIMARY COLOR SYSTEM
+--------------------------------------------------
+
+Background Color:
+#F7F7F5
+(warm off-white for softer premium appearance and reduced visual fatigue)
+
+Main Heading Color:
+#1C1C1C
+(soft charcoal black for authority, elegance, and readability)
+
+Accent Color:
+#42526B
+(deep slate blue-gray for trust, intelligence, and modern developer identity)
+
+Body Text Color:
+#525252
+(soft graphite gray for comfortable long-form readability)
+
+Secondary / Metadata Text:
+#7A7A7A
+(for subtle hierarchy and clean information separation)
+
+Divider Color:
+#D6DCE5
+(thin subtle dividers for structured organization)
+
+--------------------------------------------------
+VISUAL PSYCHOLOGY REQUIREMENTS
+--------------------------------------------------
+
+The color system must psychologically communicate:
+- calm confidence
+- intelligence
+- structured thinking
+- professionalism
+- modern technical identity
+- sophistication
+- emotional balance
+
+Avoid:
+- bright corporate blues
+- neon colors
+- aggressive black contrast
+- colorful gradients
+- overly saturated UI colors
+- gaming aesthetics
+
+--------------------------------------------------
+SECTION STYLING REQUIREMENTS
+--------------------------------------------------
+
+Main Headings:
+- use #1C1C1C
+- medium-bold premium typography
+- strong spacing hierarchy
+
+Accent Elements:
+- use #42526B
+- subtle visual emphasis only
+- section highlights
+- role titles
+- tags/chips
+- progress indicators
+
+Body Paragraphs:
+- use #525252
+- maintain calm readability
+- avoid pure black paragraphs
+
+Secondary Information:
+- use #7A7A7A
+- dates
+- metadata
+- labels
+- secondary descriptions
+
+Dividers:
+- thin 1px subtle separators
+- use #D6DCE5
+- maintain elegant structure
+
+--------------------------------------------------
+LANGUAGE BAR COLORS
+--------------------------------------------------
+
+Filled Segments:
+#42526B
+
+Empty Segments:
+#D8DEE6
+
+The bars must feel:
+- elegant
+- minimal
+- professional
+- calm
+- ATS-friendly
+
+Avoid colorful progress bars.
+
+--------------------------------------------------
+TAG / CHIP COLORS
+--------------------------------------------------
+
+Tag Background:
+#EEF2F6
+
+Tag Text:
+#42526B
+
+Tags should feel:
+- modern
+- intelligent
+- subtle
+- premium
+
+--------------------------------------------------
+PROFILE IMAGE COLOR TREATMENT
+--------------------------------------------------
+
+Apply:
+- black & white
+OR
+- slightly desaturated cool-tone effect
+
+The image should:
+- blend naturally with the resume
+- avoid harsh contrast
+- look calm and professional
+- support premium editorial aesthetics
+
+--------------------------------------------------
+OVERALL FINAL FEEL
+--------------------------------------------------
+
+The final resume should visually feel like:
+- Apple-inspired simplicity
+- modern startup professionalism
+- quiet confidence
+- intelligent structure
+- premium editorial design
+- calm modern developer identity
+
+The resume should instantly look:
+- visually balanced
+- psychologically organized
+- highly readable
+- modern and trustworthy

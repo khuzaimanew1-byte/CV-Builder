@@ -1,11 +1,26 @@
 import './_group.css';
 
+const C = {
+  bg:         '#F7F7F5',
+  surface:    '#FFFFFF',
+  heading:    '#1C1C1C',
+  accent:     '#42526B',
+  body:       '#525252',
+  meta:       '#7A7A7A',
+  divider:    '#D6DCE5',
+  tagBg:      '#EEF2F6',
+  tagText:    '#42526B',
+  barFill:    '#42526B',
+  barEmpty:   '#D8DEE6',
+  subtleIcon: '#A8B0BC',
+};
+
 const techStack = [
   {
     category: 'Frontend',
     items: [
-      { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
-      { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+      { name: 'HTML5',      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+      { name: 'CSS3',       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
       { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
     ],
   },
@@ -13,7 +28,7 @@ const techStack = [
     category: 'Backend',
     items: [
       { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-      { name: 'EJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg' },
+      { name: 'EJS',     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/embeddedc/embeddedc-original.svg' },
     ],
   },
   {
@@ -25,9 +40,9 @@ const techStack = [
   {
     category: 'Tools & Skills',
     items: [
-      { name: 'MS Office', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg' },
-      { name: 'AI Tools', icon: null },
-      { name: 'Social Media', icon: null },
+      { name: 'MS Office',   icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg' },
+      { name: 'AI Tools',    icon: null },
+      { name: 'Social Media',icon: null },
     ],
   },
 ];
@@ -35,7 +50,7 @@ const techStack = [
 const projects = [
   {
     title: 'Real-World Mobile Applications',
-    description: 'Designed and developed productive mobile-first applications solving practical user problems, with focus on clean architecture and intuitive experience.',
+    description: 'Designed and developed productive mobile-first applications solving practical user problems, with a focus on clean architecture and intuitive experience.',
     tags: ['Node.js', 'MongoDB', 'JavaScript'],
   },
   {
@@ -51,7 +66,7 @@ const projects = [
 ];
 
 const languages = [
-  { lang: 'Urdu', level: 'Native', fill: 5 },
+  { lang: 'Urdu',    level: 'Native',            fill: 5 },
   { lang: 'English', level: 'Upper Intermediate', fill: 3.5 },
 ];
 
@@ -89,10 +104,10 @@ function LanguageBar({ fill }: { fill: number }) {
           <div
             key={i}
             style={{
-              width: '28px',
+              width: '30px',
               height: '3px',
               borderRadius: '2px',
-              background: `linear-gradient(to right, #1E3A5F ${fraction * 100}%, #E5E3DF ${fraction * 100}%)`,
+              background: `linear-gradient(to right, ${C.barFill} ${fraction * 100}%, ${C.barEmpty} ${fraction * 100}%)`,
             }}
           />
         );
@@ -107,19 +122,19 @@ function TechIcon({ name, icon }: { name: string; icon: string | null }) {
       display: 'flex',
       alignItems: 'center',
       gap: '8px',
-      padding: '8px 14px',
+      padding: '7px 13px',
       borderRadius: '8px',
-      background: '#FFFFFF',
-      border: '1px solid #E5E3DF',
+      background: C.surface,
+      border: `1px solid ${C.divider}`,
       fontSize: '13px',
       fontWeight: 500,
-      color: '#222222',
+      color: C.heading,
       letterSpacing: '-0.01em',
     }}>
       {icon ? (
-        <img src={icon} alt={name} width={16} height={16} style={{ objectFit: 'contain', filter: 'none' }} />
+        <img src={icon} alt={name} width={15} height={15} style={{ objectFit: 'contain' }} />
       ) : (
-        <div style={{ width: 16, height: 16, borderRadius: '50%', background: '#1E3A5F', opacity: 0.5 }} />
+        <div style={{ width: 8, height: 8, borderRadius: '50%', background: C.accent, opacity: 0.5 }} />
       )}
       {name}
     </div>
@@ -130,7 +145,7 @@ export function Resume() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: '#F8F7F5',
+      background: C.bg,
       display: 'flex',
       justifyContent: 'center',
       padding: '48px 24px 80px',
@@ -141,28 +156,26 @@ export function Resume() {
         maxWidth: '840px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '0',
       }}>
 
         {/* ── HERO ── */}
         <section style={{
-          background: '#FFFFFF',
+          background: C.surface,
           borderRadius: '16px 16px 0 0',
           padding: '52px 56px 48px',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'flex-start',
-          borderBottom: '1px solid #E5E3DF',
+          borderBottom: `1px solid ${C.divider}`,
           position: 'relative',
           overflow: 'hidden',
         }}>
-          {/* subtle bg accent */}
           <div style={{
             position: 'absolute',
             top: 0, right: 0,
             width: '320px', height: '320px',
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(30,58,95,0.04) 0%, transparent 70%)',
+            background: `radial-gradient(circle, rgba(66,82,107,0.05) 0%, transparent 70%)`,
             transform: 'translate(30%, -30%)',
             pointerEvents: 'none',
           }} />
@@ -173,24 +186,24 @@ export function Resume() {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
-              marginBottom: '20px',
+              marginBottom: '22px',
               padding: '5px 12px',
               borderRadius: '6px',
-              background: '#EFF3F8',
-              fontSize: '11px',
+              background: C.tagBg,
+              fontSize: '10.5px',
               fontWeight: 600,
-              color: '#1E3A5F',
+              color: C.accent,
               letterSpacing: '0.08em',
               textTransform: 'uppercase' as const,
             }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#1E3A5F', display: 'inline-block' }} />
+              <span style={{ width: 5, height: 5, borderRadius: '50%', background: C.accent, display: 'inline-block' }} />
               Available for Opportunities
             </div>
 
             <h1 style={{
-              fontSize: '42px',
+              fontSize: '40px',
               fontWeight: 700,
-              color: '#111111',
+              color: C.heading,
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               margin: '0 0 8px',
@@ -199,9 +212,9 @@ export function Resume() {
             </h1>
 
             <p style={{
-              fontSize: '17px',
+              fontSize: '16px',
               fontWeight: 500,
-              color: '#2D5A8E',
+              color: C.accent,
               letterSpacing: '-0.01em',
               margin: '0 0 20px',
             }}>
@@ -209,11 +222,11 @@ export function Resume() {
             </p>
 
             <p style={{
-              fontSize: '14px',
-              lineHeight: 1.7,
-              color: '#6B6B6B',
+              fontSize: '13.5px',
+              lineHeight: 1.75,
+              color: C.body,
               maxWidth: '420px',
-              margin: '0 0 32px',
+              margin: '0 0 30px',
               fontWeight: 400,
             }}>
               Creative developer focused on practical digital solutions, emerging technologies, and independent project development. Driven by the intersection of clean code, intelligent systems, and real-world impact.
@@ -227,17 +240,13 @@ export function Resume() {
             }}>
               {[
                 { icon: '✉', label: 'khuzaimadeveloper777@gmail.com', href: 'mailto:khuzaimadeveloper777@gmail.com' },
-                { icon: '✆', label: '+92 370 6134825', href: 'tel:+923706134825' },
-                { icon: '◎', label: 'Bahawalpur, Pakistan', href: null },
+                { icon: '✆', label: '+92 370 6134825',                 href: 'tel:+923706134825' },
+                { icon: '◎', label: 'Bahawalpur, Pakistan',            href: null },
               ].map((item) => (
-                <div key={item.label} style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                }}>
+                <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <span style={{
                     fontSize: '11px',
-                    color: '#AAAAAA',
+                    color: C.subtleIcon,
                     width: '16px',
                     textAlign: 'center' as const,
                     flexShrink: 0,
@@ -246,7 +255,7 @@ export function Resume() {
                   {item.href ? (
                     <a href={item.href} style={{
                       fontSize: '13px',
-                      color: '#555555',
+                      color: C.body,
                       fontWeight: 400,
                       textDecoration: 'none',
                       letterSpacing: '-0.01em',
@@ -254,7 +263,7 @@ export function Resume() {
                   ) : (
                     <span style={{
                       fontSize: '13px',
-                      color: '#555555',
+                      color: C.body,
                       fontWeight: 400,
                       letterSpacing: '-0.01em',
                     }}>{item.label}</span>
@@ -271,27 +280,15 @@ export function Resume() {
             display: 'flex',
             flexDirection: 'column' as const,
             alignItems: 'center',
-            gap: '0',
           }}>
-            {/* Outer ring */}
             <div style={{
               padding: '3px',
               borderRadius: '50%',
-              background: 'linear-gradient(135deg, #1E3A5F 0%, #7BA3CC 50%, #E5E3DF 100%)',
-              boxShadow: '0 8px 32px rgba(30,58,95,0.18)',
+              background: `linear-gradient(135deg, ${C.accent} 0%, #8BA3BE 55%, ${C.divider} 100%)`,
+              boxShadow: '0 8px 28px rgba(66,82,107,0.18)',
             }}>
-              {/* Inner white gap */}
-              <div style={{
-                padding: '3px',
-                borderRadius: '50%',
-                background: '#FFFFFF',
-              }}>
-                <div style={{
-                  width: '148px',
-                  height: '148px',
-                  borderRadius: '50%',
-                  overflow: 'hidden',
-                }}>
+              <div style={{ padding: '3px', borderRadius: '50%', background: C.surface }}>
+                <div style={{ width: '148px', height: '148px', borderRadius: '50%', overflow: 'hidden' }}>
                   <img
                     src="/__mockup/profile.png"
                     alt="Khuzaima Asif"
@@ -300,7 +297,7 @@ export function Resume() {
                       height: '100%',
                       objectFit: 'cover',
                       objectPosition: 'top center',
-                      filter: 'grayscale(20%) contrast(1.05) brightness(1.02)',
+                      filter: 'grayscale(55%) contrast(1.04) brightness(1.02)',
                     }}
                   />
                 </div>
@@ -310,30 +307,25 @@ export function Resume() {
         </section>
 
         {/* ── BODY ── */}
-        <div style={{
-          background: '#FFFFFF',
-          display: 'flex',
-          gap: '0',
-        }}>
+        <div style={{ background: C.surface, display: 'flex' }}>
 
           {/* Left column */}
           <div style={{
             flex: '1',
             padding: '44px 36px 44px 56px',
-            borderRight: '1px solid #F0EEEA',
+            borderRight: `1px solid ${C.divider}`,
           }}>
 
-            {/* Technologies */}
             <SectionHeader label="Core Technologies" />
             <div style={{ marginBottom: '40px' }}>
               {techStack.map((group) => (
                 <div key={group.category} style={{ marginBottom: '20px' }}>
                   <p style={{
-                    fontSize: '11px',
+                    fontSize: '10.5px',
                     fontWeight: 600,
                     letterSpacing: '0.07em',
                     textTransform: 'uppercase' as const,
-                    color: '#AAAAAA',
+                    color: C.subtleIcon,
                     margin: '0 0 10px',
                   }}>{group.category}</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '8px' }}>
@@ -345,28 +337,25 @@ export function Resume() {
               ))}
             </div>
 
-            {/* Projects */}
             <SectionHeader label="Selected Projects" />
             <div style={{ marginBottom: '40px' }}>
               {projects.map((p, i) => (
                 <div key={i} style={{
                   marginBottom: '24px',
                   paddingBottom: '24px',
-                  borderBottom: i < projects.length - 1 ? '1px solid #F0EEEA' : 'none',
+                  borderBottom: i < projects.length - 1 ? `1px solid ${C.divider}` : 'none',
                 }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
-                    <p style={{
-                      fontSize: '14px',
-                      fontWeight: 600,
-                      color: '#111111',
-                      letterSpacing: '-0.01em',
-                      margin: 0,
-                    }}>{p.title}</p>
-                  </div>
                   <p style={{
-                    fontSize: '13px',
-                    lineHeight: 1.65,
-                    color: '#777777',
+                    fontSize: '13.5px',
+                    fontWeight: 600,
+                    color: C.heading,
+                    letterSpacing: '-0.01em',
+                    margin: '0 0 6px',
+                  }}>{p.title}</p>
+                  <p style={{
+                    fontSize: '12.5px',
+                    lineHeight: 1.7,
+                    color: C.meta,
                     margin: '0 0 10px',
                     fontWeight: 400,
                   }}>{p.description}</p>
@@ -375,9 +364,9 @@ export function Resume() {
                       <span key={tag} style={{
                         fontSize: '11px',
                         fontWeight: 500,
-                        color: '#555555',
-                        background: '#F2F1EF',
-                        padding: '3px 8px',
+                        color: C.tagText,
+                        background: C.tagBg,
+                        padding: '3px 9px',
                         borderRadius: '4px',
                       }}>{tag}</span>
                     ))}
@@ -386,23 +375,17 @@ export function Resume() {
               ))}
             </div>
 
-            {/* Core Strengths */}
             <SectionHeader label="Core Strengths" />
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap' as const,
-              gap: '8px',
-              marginBottom: '40px',
-            }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '8px', marginBottom: '40px' }}>
               {strengths.map((s) => (
                 <span key={s} style={{
-                  fontSize: '12.5px',
+                  fontSize: '12px',
                   fontWeight: 500,
-                  color: '#333333',
-                  background: '#F2F1EF',
+                  color: C.tagText,
+                  background: C.tagBg,
                   padding: '6px 12px',
                   borderRadius: '6px',
-                  border: '1px solid #E8E6E2',
+                  border: `1px solid ${C.divider}`,
                 }}>{s}</span>
               ))}
             </div>
@@ -411,133 +394,113 @@ export function Resume() {
 
           {/* Right column */}
           <div style={{
-            width: '248px',
+            width: '252px',
             flexShrink: 0,
             padding: '44px 40px 44px 32px',
             display: 'flex',
             flexDirection: 'column' as const,
-            gap: '0',
           }}>
 
-            {/* Education */}
             <SectionHeaderSmall label="Education" />
             <div style={{ marginBottom: '32px' }}>
               <p style={{
-                fontSize: '13.5px',
+                fontSize: '13px',
                 fontWeight: 600,
-                color: '#111111',
+                color: C.heading,
                 margin: '0 0 4px',
                 letterSpacing: '-0.01em',
               }}>UK Level-3 Diploma</p>
               <p style={{
                 fontSize: '12px',
-                color: '#666666',
-                margin: '0 0 4px',
-                lineHeight: 1.5,
+                color: C.body,
+                margin: '0 0 3px',
+                lineHeight: 1.55,
                 fontWeight: 400,
               }}>Information Technology &amp; Cybersecurity</p>
               <p style={{
                 fontSize: '12px',
-                color: '#888888',
+                color: C.meta,
                 margin: '0 0 4px',
                 fontWeight: 400,
               }}>Superior College Bahawalpur</p>
               <p style={{
                 fontSize: '11px',
-                color: '#AAAAAA',
+                color: C.subtleIcon,
                 margin: 0,
                 fontWeight: 500,
                 letterSpacing: '0.02em',
               }}>Jun 2025 – 2026</p>
             </div>
 
-            {/* Experience */}
             <SectionHeaderSmall label="Experience" />
             <div style={{ marginBottom: '32px' }}>
               <p style={{
-                fontSize: '13.5px',
+                fontSize: '13px',
                 fontWeight: 600,
-                color: '#111111',
-                margin: '0 0 4px',
+                color: C.heading,
+                margin: '0 0 3px',
                 letterSpacing: '-0.01em',
               }}>Full Stack Web Developer</p>
               <p style={{
                 fontSize: '12px',
-                color: '#666666',
-                margin: '0 0 4px',
+                color: C.body,
+                margin: '0 0 6px',
                 fontWeight: 400,
               }}>Independent / Freelance</p>
               <div style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '6px',
-                padding: '3px 8px',
-                background: '#EFF3F8',
+                padding: '3px 9px',
+                background: C.tagBg,
                 borderRadius: '5px',
-                marginTop: '6px',
               }}>
-                <span style={{ width: 5, height: 5, borderRadius: '50%', background: '#2D5A8E', display: 'inline-block' }} />
-                <span style={{ fontSize: '11px', fontWeight: 600, color: '#2D5A8E', letterSpacing: '0.02em' }}>1+ Year</span>
+                <span style={{ width: 5, height: 5, borderRadius: '50%', background: C.accent, display: 'inline-block' }} />
+                <span style={{ fontSize: '11px', fontWeight: 600, color: C.accent, letterSpacing: '0.02em' }}>1+ Year</span>
               </div>
             </div>
 
-            {/* Languages */}
             <SectionHeaderSmall label="Languages" />
             <div style={{ marginBottom: '32px' }}>
               {languages.map((l) => (
                 <div key={l.lang} style={{ marginBottom: '14px' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                    <span style={{ fontSize: '13px', fontWeight: 600, color: '#222222' }}>{l.lang}</span>
-                    <span style={{ fontSize: '11px', color: '#999999', fontWeight: 400 }}>{l.level}</span>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '7px' }}>
+                    <span style={{ fontSize: '13px', fontWeight: 600, color: C.heading }}>{l.lang}</span>
+                    <span style={{ fontSize: '11px', color: C.meta, fontWeight: 400 }}>{l.level}</span>
                   </div>
                   <LanguageBar fill={l.fill} />
                 </div>
               ))}
             </div>
 
-            {/* Interests */}
             <SectionHeaderSmall label="Interests & Exploration" />
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap' as const,
-              gap: '7px',
-              marginBottom: '32px',
-            }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '7px', marginBottom: '32px' }}>
               {interests.map((i) => (
                 <span key={i} style={{
-                  fontSize: '11.5px',
+                  fontSize: '11px',
                   fontWeight: 500,
-                  color: '#555555',
-                  background: '#F5F4F2',
+                  color: C.tagText,
+                  background: C.tagBg,
                   padding: '5px 10px',
                   borderRadius: '5px',
-                  border: '1px solid #ECEAE6',
+                  border: `1px solid ${C.divider}`,
                 }}>{i}</span>
               ))}
             </div>
 
-            {/* Currently Learning */}
             <SectionHeaderSmall label="Currently Learning" />
             <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '8px' }}>
               {learning.map((item) => (
-                <div key={item} style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                }}>
+                <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '9px' }}>
                   <div style={{
-                    width: '6px',
-                    height: '6px',
+                    width: '5px',
+                    height: '5px',
                     borderRadius: '50%',
-                    background: '#1E3A5F',
+                    background: C.accent,
                     flexShrink: 0,
-                    opacity: 0.6,
+                    opacity: 0.55,
                   }} />
-                  <span style={{
-                    fontSize: '12.5px',
-                    color: '#555555',
-                    fontWeight: 500,
-                  }}>{item}</span>
+                  <span style={{ fontSize: '12.5px', color: C.body, fontWeight: 500 }}>{item}</span>
                 </div>
               ))}
             </div>
@@ -546,18 +509,18 @@ export function Resume() {
 
         {/* ── FOOTER ── */}
         <section style={{
-          background: '#FFFFFF',
+          background: C.surface,
           borderRadius: '0 0 16px 16px',
-          borderTop: '1px solid #F0EEEA',
-          padding: '20px 56px',
+          borderTop: `1px solid ${C.divider}`,
+          padding: '18px 56px',
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
         }}>
-          <span style={{ fontSize: '11.5px', color: '#BBBBBB', fontWeight: 400, letterSpacing: '0.01em' }}>
+          <span style={{ fontSize: '11px', color: C.subtleIcon, fontWeight: 400, letterSpacing: '0.01em' }}>
             Khuzaima Asif · Full Stack Developer · Pakistan
           </span>
-          <span style={{ fontSize: '11.5px', color: '#BBBBBB', fontWeight: 400 }}>
+          <span style={{ fontSize: '11px', color: C.subtleIcon, fontWeight: 400 }}>
             khuzaimadeveloper777@gmail.com
           </span>
         </section>
@@ -569,20 +532,16 @@ export function Resume() {
 
 function SectionHeader({ label }: { label: string }) {
   return (
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: '12px',
-      marginBottom: '20px',
-    }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
       <span style={{
-        fontSize: '12px',
+        fontSize: '11.5px',
         fontWeight: 700,
-        color: '#111111',
-        letterSpacing: '0.05em',
+        color: C.heading,
+        letterSpacing: '0.06em',
         textTransform: 'uppercase' as const,
+        whiteSpace: 'nowrap' as const,
       }}>{label}</span>
-      <div style={{ flex: 1, height: '1px', background: '#ECEAE6' }} />
+      <div style={{ flex: 1, height: '1px', background: C.divider }} />
     </div>
   );
 }
@@ -590,11 +549,11 @@ function SectionHeader({ label }: { label: string }) {
 function SectionHeaderSmall({ label }: { label: string }) {
   return (
     <p style={{
-      fontSize: '10.5px',
+      fontSize: '10px',
       fontWeight: 700,
-      letterSpacing: '0.08em',
+      letterSpacing: '0.09em',
       textTransform: 'uppercase' as const,
-      color: '#BBBBBB',
+      color: C.subtleIcon,
       margin: '0 0 14px',
     }}>{label}</p>
   );
