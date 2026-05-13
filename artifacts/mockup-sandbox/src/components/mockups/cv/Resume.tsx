@@ -219,54 +219,92 @@ export function Resume() {
               Creative developer focused on practical digital solutions, emerging technologies, and independent project development. Driven by the intersection of clean code, intelligent systems, and real-world impact.
             </p>
 
-            {/* Contact row */}
+            {/* Contact list */}
             <div style={{
               display: 'flex',
-              flexWrap: 'wrap' as const,
-              gap: '20px',
+              flexDirection: 'column' as const,
+              gap: '9px',
             }}>
               {[
-                { label: 'khuzaimadeveloper777@gmail.com', href: 'mailto:khuzaimadeveloper777@gmail.com' },
-                { label: '+92 370 6134825', href: 'tel:+923706134825' },
-                { label: 'Bahawalpur, Pakistan', href: null },
+                { icon: '✉', label: 'khuzaimadeveloper777@gmail.com', href: 'mailto:khuzaimadeveloper777@gmail.com' },
+                { icon: '✆', label: '+92 370 6134825', href: 'tel:+923706134825' },
+                { icon: '◎', label: 'Bahawalpur, Pakistan', href: null },
               ].map((item) => (
-                <span key={item.label} style={{
-                  fontSize: '12.5px',
-                  color: '#888888',
-                  fontWeight: 400,
-                  letterSpacing: '0',
+                <div key={item.label} style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '6px',
+                  gap: '10px',
                 }}>
-                  <span style={{ width: 4, height: 4, borderRadius: '50%', background: '#CCCCCC', display: 'inline-block', flexShrink: 0 }} />
+                  <span style={{
+                    fontSize: '11px',
+                    color: '#AAAAAA',
+                    width: '16px',
+                    textAlign: 'center' as const,
+                    flexShrink: 0,
+                    lineHeight: 1,
+                  }}>{item.icon}</span>
                   {item.href ? (
-                    <a href={item.href} style={{ color: 'inherit', textDecoration: 'none' }}>{item.label}</a>
-                  ) : item.label}
-                </span>
+                    <a href={item.href} style={{
+                      fontSize: '13px',
+                      color: '#555555',
+                      fontWeight: 400,
+                      textDecoration: 'none',
+                      letterSpacing: '-0.01em',
+                    }}>{item.label}</a>
+                  ) : (
+                    <span style={{
+                      fontSize: '13px',
+                      color: '#555555',
+                      fontWeight: 400,
+                      letterSpacing: '-0.01em',
+                    }}>{item.label}</span>
+                  )}
+                </div>
               ))}
             </div>
           </div>
 
           {/* Right: Photo */}
           <div style={{
-            marginLeft: '48px',
+            marginLeft: '52px',
             flexShrink: 0,
+            display: 'flex',
+            flexDirection: 'column' as const,
+            alignItems: 'center',
+            gap: '0',
           }}>
+            {/* Outer ring */}
             <div style={{
-              width: '128px',
-              height: '128px',
-              borderRadius: '16px',
-              overflow: 'hidden',
-              border: '1px solid rgba(0,0,0,0.06)',
-              boxShadow: '0 4px 24px rgba(0,0,0,0.08)',
-              filter: 'grayscale(25%) contrast(1.02)',
+              padding: '3px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, #1E3A5F 0%, #7BA3CC 50%, #E5E3DF 100%)',
+              boxShadow: '0 8px 32px rgba(30,58,95,0.18)',
             }}>
-              <img
-                src="/__mockup/profile.png"
-                alt="Khuzaima Asif"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
-              />
+              {/* Inner white gap */}
+              <div style={{
+                padding: '3px',
+                borderRadius: '50%',
+                background: '#FFFFFF',
+              }}>
+                <div style={{
+                  width: '148px',
+                  height: '148px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                }}>
+                  <img
+                    src="/__mockup/profile.png"
+                    alt="Khuzaima Asif"
+                    style={{
+                      width: '100%',
+                      height: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'top center',
+                      filter: 'grayscale(20%) contrast(1.05) brightness(1.02)',
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
