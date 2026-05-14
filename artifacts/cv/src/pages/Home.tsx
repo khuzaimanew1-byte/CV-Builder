@@ -189,36 +189,33 @@ export default function Home() {
           .print-btn { display: none !important; }
           @page {
             size: A4;
-            margin: 14mm;
+            margin: 0mm;
           }
           *, *::before, *::after {
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
           }
-          html {
+          html, body {
             margin: 0 !important;
             padding: 0 !important;
-            background: #F7F7F5 !important;
-          }
-          body {
-            margin: 0 !important;
-            padding: 0 !important;
+            width: 210mm !important;
+            height: 297mm !important;
             background: #F7F7F5 !important;
           }
           #cv-root {
+            width: 210mm !important;
+            min-height: 297mm !important;
             margin: 0 !important;
             padding: 0 !important;
             display: block !important;
             background: #F7F7F5 !important;
-            min-height: unset !important;
           }
           #cv-root > div {
             max-width: 100% !important;
-            width: 100% !important;
+            width: 210mm !important;
             margin: 0 !important;
             padding: 0 !important;
             background: #F7F7F5 !important;
-            border-radius: 0 !important;
           }
         }
 
