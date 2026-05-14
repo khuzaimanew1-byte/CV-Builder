@@ -191,14 +191,16 @@ export default function Home() {
             size: A4;
             margin: 0mm;
           }
+          *, *::before, *::after {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
           html, body {
             margin: 0 !important;
             padding: 0 !important;
             width: 210mm !important;
             height: 297mm !important;
             background: #F7F7F5 !important;
-            -webkit-print-color-adjust: exact !important;
-            print-color-adjust: exact !important;
           }
           #cv-root {
             width: 210mm !important;
