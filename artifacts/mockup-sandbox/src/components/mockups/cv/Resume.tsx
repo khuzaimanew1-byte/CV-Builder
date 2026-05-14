@@ -191,17 +191,17 @@ export function Resume() {
               Full Stack Web Developer
             </p>
 
-            <p style={{
-              fontSize: '13.5px',
-              lineHeight: 1.7,
-              color: C.body,
-              maxWidth: '420px',
-              margin: '0 0 26px',
-              fontWeight: 400,
-            }}>
-              IT &amp; Cybersecurity student focused on web development, practical digital solutions, and modern technologies.<br />
-              Passionate about building innovative systems through independent learning and experimentation.
-            </p>
+            <div style={{ margin: '0 0 26px', display: 'flex', flexDirection: 'column' as const, gap: '7px', maxWidth: '420px' }}>
+              {[
+                'IT & Cybersecurity student focused on web development, practical digital solutions, and modern technologies.',
+                'Passionate about building innovative systems through independent learning and experimentation.',
+              ].map((line) => (
+                <div key={line} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                  <div style={{ width: '4px', height: '4px', borderRadius: '50%', background: C.accent, flexShrink: 0, marginTop: '8px', opacity: 0.7 }} />
+                  <span style={{ fontSize: '13.5px', lineHeight: 1.7, color: C.body, fontWeight: 400 }}>{line}</span>
+                </div>
+              ))}
+            </div>
 
             {/* Contact inline */}
             <style>{`
