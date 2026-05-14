@@ -3,16 +3,16 @@ import './_group.css';
 const C = {
   bg:         '#F7F7F5',
   surface:    '#FFFFFF',
-  heading:    '#1C1C1C',
-  accent:     '#42526B',
-  body:       '#525252',
-  meta:       '#7A7A7A',
-  divider:    '#D6DCE5',
-  tagBg:      '#EEF2F6',
-  tagText:    '#42526B',
-  barFill:    '#42526B',
+  heading:    '#18181B',
+  accent:     '#3F4E68',
+  body:       '#4B5563',
+  meta:       '#7C8593',
+  divider:    '#DCE3EA',
+  tagBg:      '#EEF2F7',
+  tagText:    '#3F4E68',
+  barFill:    '#3F4E68',
   barEmpty:   '#D8DEE6',
-  subtleIcon: '#A8B0BC',
+  subtleIcon: '#9BAAB8',
 };
 
 const techStack = [

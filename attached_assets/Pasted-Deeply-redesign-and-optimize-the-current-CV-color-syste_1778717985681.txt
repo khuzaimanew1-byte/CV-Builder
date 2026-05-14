@@ -1,0 +1,148 @@
+Deeply redesign and optimize the current CV color system using premium psychological design principles.
+
+The current layout structure should remain modern and minimal, but the color palette must be upgraded to create:
+- stronger visual sophistication
+- calm premium aesthetics
+- recruiter trust
+- modern startup/developer identity
+- better visual hierarchy
+- subtle emotional impact
+- editorial-quality presentation
+
+--------------------------------------------------
+NEW PSYCHOLOGICAL COLOR SYSTEM
+--------------------------------------------------
+
+Background:
+#F7F7F5
+Use a warm off-white tone instead of cold gray-white to create:
+- luxury editorial feel
+- softer visual experience
+- reduced eye fatigue
+- calm professionalism
+
+Main Name & Primary Headings:
+#18181B
+Use a deep soft charcoal instead of harsh black for:
+- authority
+- sophistication
+- premium contrast
+- modern readability
+
+Primary Accent Color:
+#3F4E68
+Use a deep slate navy tone for:
+- trust
+- intelligence
+- strategic professionalism
+- modern tech identity
+
+Apply this accent subtly to:
+- tags/chips
+- role titles
+- language bars
+- small highlights
+- section emphasis
+- thin dividers
+
+Body Text:
+#4B5563
+Use a softer graphite gray for:
+- premium readability
+- reduced harshness
+- cleaner typography rhythm
+
+Secondary Text / Metadata:
+#7C8593
+Use for:
+- dates
+- labels
+- secondary descriptions
+- subtle metadata
+
+Divider Lines:
+#DCE3EA
+Use elegant thin 1px dividers only.
+
+Avoid heavy separators or dark borders.
+
+--------------------------------------------------
+TAG / CHIP IMPROVEMENTS
+--------------------------------------------------
+
+Tag Background:
+#EEF2F7
+
+Tag Text:
+#3F4E68
+
+Tags should feel:
+- refined
+- intelligent
+- premium
+- modern
+- subtle
+
+Avoid flat gray tags.
+
+--------------------------------------------------
+LANGUAGE BAR IMPROVEMENTS
+--------------------------------------------------
+
+Filled Segments:
+#3F4E68
+
+Empty Segments:
+#D8DEE6
+
+The bars should feel:
+- elegant
+- calm
+- minimal
+- premium
+- ATS-friendly
+
+--------------------------------------------------
+PROFILE IMAGE IMPROVEMENTS
+--------------------------------------------------
+
+Convert the profile image into:
+- soft black & white
+OR
+- lightly desaturated editorial tone
+
+Reduce:
+- harsh contrast
+- strong shadows
+
+The image should:
+- blend naturally into the layout
+- feel calm and sophisticated
+- support modern premium identity
+- avoid passport-photo appearance
+
+--------------------------------------------------
+OVERALL VISUAL GOAL
+--------------------------------------------------
+
+The final CV should feel like:
+- Apple-inspired editorial design
+- modern startup professionalism
+- quiet confidence
+- intelligent structure
+- premium developer identity
+- calm modern sophistication
+
+The design should visually communicate:
+- independent builder mindset
+- strategic thinking
+- modern technical direction
+- creativity with professionalism
+
+Avoid:
+- flashy colors
+- bright blues
+- neon accents
+- corporate template energy
+- overdesigned visuals
+- flat grayscale appearance
