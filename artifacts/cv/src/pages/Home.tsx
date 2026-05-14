@@ -155,6 +155,54 @@ export default function Home() {
         .cv-contact-item:hover .cv-contact-icon { filter: drop-shadow(0 0 5px rgba(53,92,222,0.45)); }
         .cv-contact-icon { transition: filter 0.3s ease; }
 
+        .print-btn {
+          position: fixed;
+          bottom: 28px;
+          right: 28px;
+          z-index: 999;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: #355CDE;
+          color: #fff;
+          border: none;
+          border-radius: 10px;
+          font-family: 'Inter', sans-serif;
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+          cursor: pointer;
+          box-shadow: 0 4px 16px rgba(53,92,222,0.30);
+          transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .print-btn:hover {
+          background: #2848c8;
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(53,92,222,0.38);
+        }
+        .print-btn:active {
+          transform: translateY(0);
+        }
+
+        @media print {
+          .print-btn { display: none !important; }
+          body { background: #fff !important; }
+          @page {
+            size: A4;
+            margin: 0;
+          }
+          html, body {
+            width: 210mm;
+            height: 297mm;
+          }
+          #cv-root {
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            min-height: unset !important;
+          }
+        }
+
         .profile-img-ring {
           transition: transform 0.35s ease, box-shadow 0.35s ease;
         }
@@ -493,6 +541,16 @@ export default function Home() {
 
         </div>
       </div>
+
+      {/* Print Button */}
+      <button className="print-btn" onClick={() => window.print()}>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"/>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+          <rect x="6" y="14" width="12" height="8"/>
+        </svg>
+        Download PDF
+      </button>
     </>
   );
 }
