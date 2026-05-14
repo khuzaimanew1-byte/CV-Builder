@@ -1,4 +1,5 @@
 import './_group.css';
+import { Mail, PhoneCall, MapPin } from 'lucide-react';
 
 const C = {
   bg:         '#F7F7F5',
@@ -203,27 +204,46 @@ export function Resume() {
             </p>
 
             {/* Contact inline */}
+            <style>{`
+              .cv-contact-item { transition: transform 0.3s ease; }
+              .cv-contact-item:hover { transform: translateY(-2px); }
+              .cv-contact-item:hover .cv-contact-icon { filter: drop-shadow(0 0 5px rgba(53,92,222,0.45)); }
+              .cv-contact-icon { transition: filter 0.3s ease; }
+            `}</style>
             {(() => {
               const contacts = [
-                { icon: '✉', label: 'khuzaimadeveloper777@gmail.com', href: 'mailto:khuzaimadeveloper777@gmail.com' },
-                { icon: '✆', label: '+92 370 6134825',                 href: 'tel:+923706134825' },
-                { icon: '◎', label: 'Bahawalpur, Pakistan',            href: null },
+                { Icon: Mail,      label: 'khuzaimadeveloper777@gmail.com', href: 'mailto:khuzaimadeveloper777@gmail.com' },
+                { Icon: PhoneCall, label: '+92 370 6134825',                 href: 'tel:+923706134825' },
+                { Icon: MapPin,    label: 'Bahawalpur, Pakistan',            href: null },
               ];
               return (
-                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' as const, rowGap: '6px' }}>
-                  {contacts.map((item, idx) => (
-                    <div key={item.label} style={{ display: 'flex', alignItems: 'center' }}>
-                      <span style={{ fontSize: '10px', color: C.accent, marginRight: '5px', lineHeight: 1 }}>{item.icon}</span>
-                      {item.href ? (
-                        <a href={item.href} style={{ fontSize: '12.5px', color: C.body, fontWeight: 400, textDecoration: 'none' }}>{item.label}</a>
-                      ) : (
-                        <span style={{ fontSize: '12.5px', color: C.body, fontWeight: 400 }}>{item.label}</span>
-                      )}
-                      {idx < contacts.length - 1 && (
-                        <span style={{ color: C.subtle, margin: '0 12px', fontSize: '11px', opacity: 0.4, userSelect: 'none' as const }}>·</span>
-                      )}
-                    </div>
-                  ))}
+                <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap' as const, rowGap: '8px' }}>
+                  {contacts.map((item, idx) => {
+                    const inner = (
+                      <div className="cv-contact-item" style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: item.href ? 'pointer' : 'default' }}>
+                        <item.Icon
+                          className="cv-contact-icon"
+                          size={17}
+                          strokeWidth={2.2}
+                          color={C.accent}
+                          style={{ flexShrink: 0 }}
+                        />
+                        <span style={{ fontSize: '13px', color: C.body, fontWeight: 400, letterSpacing: '-0.01em' }}>
+                          {item.label}
+                        </span>
+                      </div>
+                    );
+                    return (
+                      <div key={item.label} style={{ display: 'flex', alignItems: 'center' }}>
+                        {item.href ? (
+                          <a href={item.href} style={{ textDecoration: 'none' }}>{inner}</a>
+                        ) : inner}
+                        {idx < contacts.length - 1 && (
+                          <span style={{ color: C.subtle, margin: '0 14px', fontSize: '12px', opacity: 0.35, userSelect: 'none' as const }}>·</span>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               );
             })()}
