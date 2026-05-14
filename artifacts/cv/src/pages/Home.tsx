@@ -154,6 +154,28 @@ export default function Home() {
         .cv-contact-item:hover { transform: translateY(-2px); }
         .cv-contact-item:hover .cv-contact-icon { filter: drop-shadow(0 0 5px rgba(53,92,222,0.45)); }
         .cv-contact-icon { transition: filter 0.3s ease; }
+
+        .profile-img-ring {
+          transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+        .profile-img-ring:hover {
+          transform: scale(1.03);
+          box-shadow:
+            0 0 0 3px #ffffff,
+            0 0 0 5.5px rgba(53,92,222,0.65),
+            0 14px 36px rgba(53,92,222,0.22);
+        }
+        .profile-bg-glow {
+          background: radial-gradient(circle at 50% 55%, rgba(53,92,222,0.11) 0%, rgba(53,92,222,0.04) 50%, transparent 72%);
+        }
+        .profile-bg-grid {
+          background-image:
+            linear-gradient(rgba(53,92,222,0.055) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(53,92,222,0.055) 1px, transparent 1px);
+          background-size: 18px 18px;
+          mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 72%);
+          -webkit-mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 72%);
+        }
       `}</style>
 
       <div style={{
@@ -272,26 +294,47 @@ export default function Home() {
             </div>
 
             {/* Right: Photo */}
-            <div style={{ marginLeft: '52px', flexShrink: 0 }}>
-              <div style={{
-                padding: '2px',
+            <div style={{ marginLeft: '52px', marginTop: '10px', flexShrink: 0, position: 'relative', width: '190px', height: '190px' }}>
+              {/* Soft radial glow behind image */}
+              <div className="profile-bg-glow" style={{
+                position: 'absolute',
+                inset: '-28px',
                 borderRadius: '50%',
-                background: C.accent,
-                boxShadow: '0 6px 20px rgba(53,92,222,0.16)',
-              }}>
-                <div style={{ padding: '3px', borderRadius: '50%', background: C.surface }}>
-                  <div style={{ width: '170px', height: '170px', borderRadius: '50%', overflow: 'hidden' }}>
-                    <img
-                      src="/profile.png"
-                      alt="Khuzaima Asif"
-                      style={{
-                        width: '100%', height: '100%',
-                        objectFit: 'cover', objectPosition: 'top center',
-                        filter: 'grayscale(50%) contrast(1.02) brightness(1.04)',
-                      }}
-                    />
-                  </div>
-                </div>
+                pointerEvents: 'none',
+              }} />
+              {/* Faint blueprint grid, masked to circle */}
+              <div className="profile-bg-grid" style={{
+                position: 'absolute',
+                inset: '-18px',
+                borderRadius: '50%',
+                pointerEvents: 'none',
+              }} />
+              {/* Dual-ring image */}
+              <div
+                className="profile-img-ring"
+                style={{
+                  position: 'relative',
+                  width: '190px',
+                  height: '190px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  boxShadow: `
+                    0 0 0 3px #ffffff,
+                    0 0 0 5.5px rgba(53,92,222,0.42),
+                    0 8px 28px rgba(53,92,222,0.15)
+                  `,
+                }}
+              >
+                <img
+                  src="/profile.png"
+                  alt="Khuzaima Asif"
+                  style={{
+                    width: '100%', height: '100%',
+                    objectFit: 'cover', objectPosition: 'center top',
+                    display: 'block',
+                    filter: 'contrast(1.04) brightness(1.03) saturate(1.05)',
+                  }}
+                />
               </div>
             </div>
           </section>
