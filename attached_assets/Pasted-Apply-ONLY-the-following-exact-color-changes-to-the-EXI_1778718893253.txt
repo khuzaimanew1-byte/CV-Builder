@@ -1,0 +1,268 @@
+Apply ONLY the following exact color changes to the EXISTING CV design.
+
+Do NOT redesign layout.
+Do NOT change structure.
+Do NOT regenerate sections.
+
+Only update colors precisely in the mentioned places.
+
+--------------------------------------------------
+PRIMARY BRAND COLOR
+--------------------------------------------------
+
+Use this as the MAIN premium accent color everywhere:
+
+🟦 Primary Accent:
+#355CDE
+
+This color should create:
+- modern premium developer identity
+- startup-level sophistication
+- stronger visual hierarchy
+- memorable recruiter attention
+
+--------------------------------------------------
+1. NAME COLOR
+--------------------------------------------------
+
+Current:
+Black/Dark Gray
+
+Change TO:
+#111827
+
+Apply ONLY to:
+- "Khuzaima Asif"
+
+The name should remain:
+- bold
+- dominant
+- clean
+
+DO NOT apply blue on the full name.
+
+--------------------------------------------------
+2. ROLE TITLE COLOR
+--------------------------------------------------
+
+Current:
+Gray/Black
+
+Change:
+"Full Stack Web Developer"
+
+TO:
+🟦 #355CDE
+
+This is IMPORTANT.
+
+The role title should instantly stand out visually.
+
+--------------------------------------------------
+3. SECTION HEADINGS
+--------------------------------------------------
+
+Apply:
+🟦 #355CDE
+
+ONLY to these headings:
+- TECHNOLOGIES
+- EDUCATION
+- EXPERIENCE
+- SELECTED PROJECTS
+- CORE STRENGTHS
+- CURRENT LEARNING
+- LANGUAGE
+
+Do NOT apply blue to paragraph text.
+
+Only headings.
+
+--------------------------------------------------
+4. TECHNOLOGY TAGS / SKILL CHIPS
+--------------------------------------------------
+
+Current chips feel flat.
+
+Change ALL technology chips to:
+
+Background:
+🟦 #EEF4FF
+
+Border:
+🟦 #C7D7FF
+
+Text/Icon:
+🟦 #355CDE
+
+Apply to:
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- EJS
+- MongoDB
+- MS Office
+- AI Tools
+- Social Media
+
+ALL skill chips.
+
+--------------------------------------------------
+5. PROJECT TAGS / STRENGTH TAGS
+--------------------------------------------------
+
+Current:
+gray pills
+
+Change TO:
+
+Background:
+🟦 #EEF4FF
+
+Text:
+🟦 #355CDE
+
+Border:
+🟦 #D6E4FF
+
+Apply to:
+- Creative Problem Solving
+- Strategic Thinking
+- Deep Focus
+- Independent Developer
+- etc
+
+ALL tags/chips.
+
+--------------------------------------------------
+6. LANGUAGE BARS
+--------------------------------------------------
+
+Current bars are too weak visually.
+
+Change:
+
+Filled Bars:
+🟦 #355CDE
+
+Empty Bars:
+⬜ #DCE6FF
+
+Apply ONLY to:
+- Urdu proficiency bar
+- English proficiency bar
+
+Do NOT use gradients.
+
+--------------------------------------------------
+7. CONTACT ICONS
+--------------------------------------------------
+
+Current:
+black/dark
+
+Change ONLY icons to:
+🟦 #355CDE
+
+Apply to:
+- email icon
+- phone icon
+- location icon
+
+Keep text dark.
+
+--------------------------------------------------
+8. PROJECT TITLES
+--------------------------------------------------
+
+Current:
+dark gray
+
+Change project titles ONLY to:
+🟦 #355CDE
+
+Apply to:
+- Real World Web Applications
+- Digital Systems Automation
+- AI-Powered Explorations
+
+Do NOT change descriptions.
+
+--------------------------------------------------
+9. DIVIDER LINES
+--------------------------------------------------
+
+Current:
+flat gray
+
+Change ALL divider lines to:
+🟦 #D9E4FF
+
+Keep them:
+- thin
+- subtle
+- clean
+
+--------------------------------------------------
+10. PROFILE IMAGE BORDER
+--------------------------------------------------
+
+Current border:
+gray
+
+Change image outer ring/border to:
+🟦 #355CDE
+
+BUT:
+- keep border thin
+- premium
+- subtle
+
+Do NOT make thick blue ring.
+
+--------------------------------------------------
+11. HOVER / SMALL ACCENT ELEMENTS
+--------------------------------------------------
+
+Any:
+- small highlights
+- active accents
+- mini labels
+
+should use:
+🟦 #355CDE
+
+ONLY subtly.
+
+--------------------------------------------------
+12. IMPORTANT RULE
+--------------------------------------------------
+
+DO NOT:
+- make paragraphs blue
+- apply blue everywhere
+- overuse color
+- use gradients
+- change background to blue
+- make the design flashy
+
+The blue should act as:
+- premium hierarchy color
+- visual guide
+- recruiter attention anchor
+
+NOT as decoration.
+
+--------------------------------------------------
+FINAL RESULT SHOULD FEEL LIKE
+--------------------------------------------------
+
+- premium startup resume
+- modern developer identity
+- visually intelligent
+- recruiter-friendly
+- elegant
+- calm but memorable
+- Apple + Linear inspired
+- modern SaaS aesthetic

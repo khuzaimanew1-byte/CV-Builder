@@ -1,18 +1,21 @@
 import './_group.css';
 
 const C = {
-  bg:         '#F7F7F5',
-  surface:    '#FFFFFF',
-  heading:    '#18181B',
-  accent:     '#3F4E68',
-  body:       '#4B5563',
-  meta:       '#7C8593',
-  divider:    '#DCE3EA',
-  tagBg:      '#EEF2F7',
-  tagText:    '#3F4E68',
-  barFill:    '#3F4E68',
-  barEmpty:   '#D8DEE6',
-  subtleIcon: '#9BAAB8',
+  bg:          '#F7F7F5',
+  surface:     '#FFFFFF',
+  name:        '#111827',
+  heading:     '#18181B',
+  accent:      '#355CDE',
+  body:        '#4B5563',
+  meta:        '#7C8593',
+  divider:     '#D9E4FF',
+  tagBg:       '#EEF4FF',
+  tagText:     '#355CDE',
+  tagBorder:   '#D6E4FF',
+  techBorder:  '#C7D7FF',
+  barFill:     '#355CDE',
+  barEmpty:    '#DCE6FF',
+  subtleIcon:  '#9BAAB8',
 };
 
 const techStack = [
@@ -125,7 +128,7 @@ function TechIcon({ name, icon }: { name: string; icon: string | null }) {
       padding: '7px 13px',
       borderRadius: '8px',
       background: C.surface,
-      border: `1px solid ${C.divider}`,
+      border: `1px solid ${C.techBorder}`,
       fontSize: '13px',
       fontWeight: 500,
       color: C.heading,
@@ -203,7 +206,7 @@ export function Resume() {
             <h1 style={{
               fontSize: '40px',
               fontWeight: 700,
-              color: C.heading,
+              color: C.name,
               letterSpacing: '-0.03em',
               lineHeight: 1.1,
               margin: '0 0 8px',
@@ -246,7 +249,7 @@ export function Resume() {
                 <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                   <span style={{
                     fontSize: '11px',
-                    color: C.subtleIcon,
+                    color: C.accent,
                     width: '16px',
                     textAlign: 'center' as const,
                     flexShrink: 0,
@@ -282,10 +285,10 @@ export function Resume() {
             alignItems: 'center',
           }}>
             <div style={{
-              padding: '3px',
+              padding: '2px',
               borderRadius: '50%',
-              background: `linear-gradient(135deg, ${C.accent} 0%, #8BA3BE 55%, ${C.divider} 100%)`,
-              boxShadow: '0 8px 28px rgba(66,82,107,0.18)',
+              background: C.accent,
+              boxShadow: '0 6px 24px rgba(53,92,222,0.20)',
             }}>
               <div style={{ padding: '3px', borderRadius: '50%', background: C.surface }}>
                 <div style={{ width: '190px', height: '190px', borderRadius: '50%', overflow: 'hidden' }}>
@@ -348,7 +351,7 @@ export function Resume() {
                   <p style={{
                     fontSize: '13.5px',
                     fontWeight: 600,
-                    color: C.heading,
+                    color: C.accent,
                     letterSpacing: '-0.01em',
                     margin: '0 0 6px',
                   }}>{p.title}</p>
@@ -385,7 +388,7 @@ export function Resume() {
                   background: C.tagBg,
                   padding: '6px 12px',
                   borderRadius: '6px',
-                  border: `1px solid ${C.divider}`,
+                  border: `1px solid ${C.tagBorder}`,
                 }}>{s}</span>
               ))}
             </div>
@@ -483,7 +486,7 @@ export function Resume() {
                   background: C.tagBg,
                   padding: '5px 10px',
                   borderRadius: '5px',
-                  border: `1px solid ${C.divider}`,
+                  border: `1px solid ${C.tagBorder}`,
                 }}>{i}</span>
               ))}
             </div>
@@ -536,7 +539,7 @@ function SectionHeader({ label }: { label: string }) {
       <span style={{
         fontSize: '11.5px',
         fontWeight: 700,
-        color: C.heading,
+        color: C.accent,
         letterSpacing: '0.06em',
         textTransform: 'uppercase' as const,
         whiteSpace: 'nowrap' as const,
@@ -553,7 +556,7 @@ function SectionHeaderSmall({ label }: { label: string }) {
       fontWeight: 700,
       letterSpacing: '0.09em',
       textTransform: 'uppercase' as const,
-      color: C.subtleIcon,
+      color: C.accent,
       margin: '0 0 14px',
     }}>{label}</p>
   );
