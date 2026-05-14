@@ -300,18 +300,19 @@ export function Resume() {
             <SectionHeader label="Technical Skills" />
             <div style={{ marginBottom: '40px' }}>
               {techStack.map((group) => (
-                <div key={group.category} style={{ display: 'flex', gap: '0', marginBottom: '10px', alignItems: 'baseline' }}>
-                  <span style={{
-                    fontSize: '10px', fontWeight: 700, letterSpacing: '0.07em',
+                <div key={group.category} style={{ marginBottom: '18px' }}>
+                  <p style={{
+                    fontSize: '10px', fontWeight: 700, letterSpacing: '0.08em',
                     textTransform: 'uppercase' as const,
                     color: C.chip[group.variant].text,
-                    opacity: 0.75,
-                    flexShrink: 0,
-                    width: '136px',
-                  }}>{group.category}</span>
-                  <span style={{ fontSize: '13px', color: C.body, fontWeight: 400, lineHeight: 1.6 }}>
-                    {group.items.map((item) => item.name).join(',  ')}
-                  </span>
+                    opacity: 0.8,
+                    margin: '0 0 9px',
+                  }}>{group.category}</p>
+                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '7px' }}>
+                    {group.items.map((item) => (
+                      <TechChip key={item.name} name={item.name} icon={item.icon} variant={group.variant} />
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
