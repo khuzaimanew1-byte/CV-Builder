@@ -187,19 +187,27 @@ export default function Home() {
 
         @media print {
           .print-btn { display: none !important; }
-          body { background: #fff !important; }
           @page {
             size: A4;
-            margin: 0;
+            margin: 0mm;
           }
-          html, body {
-            width: 210mm;
-            height: 297mm;
+          html {
+            margin: 0 !important;
+            padding: 0 !important;
+          }
+          body {
+            margin: 0 !important;
+            padding: 0 !important;
+            background: #fff !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
           }
           #cv-root {
             box-shadow: none !important;
             border-radius: 0 !important;
             min-height: unset !important;
+            margin: 0 !important;
+            padding: 0 !important;
           }
         }
 
@@ -226,7 +234,7 @@ export default function Home() {
         }
       `}</style>
 
-      <div style={{
+      <div id="cv-root" style={{
         minHeight: '100vh',
         background: C.bg,
         display: 'flex',
