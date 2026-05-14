@@ -1,4 +1,4 @@
-import { Mail, PhoneCall, MapPin } from 'lucide-react';
+import { Mail, PhoneCall, MapPin, Lightbulb, Brain, Focus, Code2, Search, Sparkles } from 'lucide-react';
 
 const C = {
   bg:         '#F7F7F5',
@@ -58,12 +58,12 @@ const languages = [
 ];
 
 const strengths = [
-  'Creative Problem Solving',
-  'Strategic Thinking',
-  'Deep Focus',
-  'Independent Development',
-  'Strong Curiosity',
-  'Innovation Mindset',
+  { label: 'Creative Problem Solving', icon: Lightbulb },
+  { label: 'Strategic Thinking',       icon: Brain },
+  { label: 'Deep Focus',               icon: Focus },
+  { label: 'Independent Development',  icon: Code2 },
+  { label: 'Strong Curiosity',         icon: Search },
+  { label: 'Innovation Mindset',       icon: Sparkles },
 ];
 
 const learning = [
@@ -333,17 +333,24 @@ export default function Home() {
               </div>
 
               <SectionHeader label="Core Strengths" />
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '7px' }}>
-                {strengths.map((s) => (
-                  <span key={s} style={{
-                    fontSize: '11.5px',
-                    fontWeight: 500,
-                    color: C.tagText,
-                    background: C.tagBg,
-                    padding: '5px 11px',
-                    borderRadius: '6px',
-                    border: `1px solid ${C.tagBorder}`,
-                  }}>{s}</span>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px 10px' }}>
+                {strengths.map(({ label, icon: Icon }) => (
+                  <div
+                    key={label}
+                    className="strength-item"
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '7px',
+                      padding: '5px 4px',
+                      borderRadius: '5px',
+                      cursor: 'default',
+                      transition: 'opacity 0.18s ease',
+                    }}
+                  >
+                    <Icon size={15} strokeWidth={1.8} style={{ color: C.accent, flexShrink: 0 }} />
+                    <span style={{ fontSize: '12px', fontWeight: 500, color: C.heading, lineHeight: 1 }}>{label}</span>
+                  </div>
                 ))}
               </div>
             </div>
