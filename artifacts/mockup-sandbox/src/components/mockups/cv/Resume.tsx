@@ -288,7 +288,7 @@ export function Resume() {
               boxShadow: '0 8px 28px rgba(66,82,107,0.18)',
             }}>
               <div style={{ padding: '3px', borderRadius: '50%', background: C.surface }}>
-                <div style={{ width: '148px', height: '148px', borderRadius: '50%', overflow: 'hidden' }}>
+                <div style={{ width: '190px', height: '190px', borderRadius: '50%', overflow: 'hidden' }}>
                   <img
                     src="/__mockup/profile.png"
                     alt="Khuzaima Asif"
