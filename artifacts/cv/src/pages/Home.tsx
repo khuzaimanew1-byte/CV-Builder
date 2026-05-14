@@ -191,23 +191,24 @@ export default function Home() {
             size: A4;
             margin: 0mm;
           }
-          html {
+          html, body {
             margin: 0 !important;
             padding: 0 !important;
-          }
-          body {
-            margin: 0 !important;
-            padding: 0 !important;
-            background: #fff !important;
+            width: 210mm !important;
+            height: 297mm !important;
+            background: #F7F7F5 !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
           }
           #cv-root {
-            box-shadow: none !important;
-            border-radius: 0 !important;
-            min-height: unset !important;
+            width: 210mm !important;
+            height: 297mm !important;
             margin: 0 !important;
             padding: 0 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            background: #F7F7F5 !important;
           }
         }
 
