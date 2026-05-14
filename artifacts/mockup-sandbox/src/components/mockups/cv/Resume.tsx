@@ -278,11 +278,9 @@ export function Resume() {
               {techStack.map((group, gIdx) => (
                 <div key={group.category} style={{
                   display: 'flex',
-                  alignItems: 'center',
-                  gap: '0',
-                  marginBottom: gIdx < techStack.length - 1 ? '12px' : '0',
-                  flexWrap: 'wrap' as const,
-                  rowGap: '8px',
+                  flexDirection: 'column' as const,
+                  gap: '8px',
+                  marginBottom: gIdx < techStack.length - 1 ? '16px' : '0',
                 }}>
                   <span style={{
                     fontSize: '9.5px',
@@ -290,10 +288,8 @@ export function Resume() {
                     letterSpacing: '0.07em',
                     textTransform: 'uppercase' as const,
                     color: C.subtle,
-                    width: '108px',
-                    flexShrink: 0,
                   }}>{group.category}</span>
-                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '18px', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '20px', alignItems: 'center' }}>
                     {group.items.map((item) => (
                       <TechItem key={item.name} name={item.name} icon={item.icon} />
                     ))}
