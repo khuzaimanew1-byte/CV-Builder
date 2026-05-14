@@ -187,19 +187,41 @@ export default function Home() {
 
         @media print {
           .print-btn { display: none !important; }
-          body { background: #fff !important; }
+
           @page {
-            size: A4;
+            size: A4 portrait;
             margin: 0;
           }
+
           html, body {
             width: 210mm;
             height: 297mm;
+            overflow: hidden;
+            background: #fff !important;
           }
-          #cv-root {
-            box-shadow: none !important;
-            border-radius: 0 !important;
-            min-height: unset !important;
+
+          .cv-page-wrapper {
+            all: unset;
+            display: block;
+            width: 210mm;
+            height: 297mm;
+            overflow: hidden;
+            padding: 0 !important;
+            background: #fff !important;
+          }
+
+          .cv-card {
+            transform-origin: top left;
+            transform: scale(0.76);
+            width: calc(100% / 0.76) !important;
+            max-width: none !important;
+            page-break-inside: avoid;
+            break-inside: avoid;
+          }
+
+          .cv-card * {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
           }
         }
 
@@ -226,7 +248,7 @@ export default function Home() {
         }
       `}</style>
 
-      <div style={{
+      <div className="cv-page-wrapper" style={{
         minHeight: '100vh',
         background: C.bg,
         display: 'flex',
@@ -234,7 +256,7 @@ export default function Home() {
         padding: '48px 24px 80px',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
       }}>
-        <div style={{ width: '100%', maxWidth: '840px', display: 'flex', flexDirection: 'column' }}>
+        <div className="cv-card" style={{ width: '100%', maxWidth: '840px', display: 'flex', flexDirection: 'column' }}>
 
           {/* ── HERO ── */}
           <section style={{
