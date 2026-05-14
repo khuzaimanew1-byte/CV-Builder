@@ -92,26 +92,18 @@ function LanguageBar({ fill }: { fill: number }) {
   );
 }
 
-function TechChip({ name, icon }: { name: string; icon: string | null }) {
+function TechItem({ name, icon }: { name: string; icon: string | null }) {
   return (
     <div style={{
       display: 'flex',
       alignItems: 'center',
-      gap: '6px',
-      padding: '5px 11px',
-      borderRadius: '6px',
-      background: C.tagBg,
-      border: `1px solid ${C.techBorder}`,
-      fontSize: '12px',
-      fontWeight: 500,
-      color: C.tagText,
-      letterSpacing: '-0.01em',
+      gap: '7px',
     }}>
       {icon
-        ? <img src={icon} alt={name} width={13} height={13} style={{ objectFit: 'contain' }} />
-        : <div style={{ width: 6, height: 6, borderRadius: '50%', background: C.accent, opacity: 0.5 }} />
+        ? <img src={icon} alt={name} width={14} height={14} style={{ objectFit: 'contain', flexShrink: 0 }} />
+        : <div style={{ width: 5, height: 5, borderRadius: '50%', background: C.accent, opacity: 0.6, flexShrink: 0 }} />
       }
-      {name}
+      <span style={{ fontSize: '13px', color: C.heading, fontWeight: 450, letterSpacing: '-0.01em' }}>{name}</span>
     </div>
   );
 }
@@ -194,7 +186,7 @@ export function Resume() {
             <div style={{ margin: '0 0 26px', display: 'flex', flexDirection: 'column' as const, gap: '7px', maxWidth: '420px' }}>
               {[
                 'IT & Cybersecurity student focused on web development, practical digital solutions, and modern technologies.',
-                'Passionate about building innovative systems through independent learning and experimentation.',
+                'Passionate about creating impactful technologies, exploring emerging AI systems, and developing practical solutions that combine functionality, innovation, and long-term value.',
               ].map((line) => (
                 <div key={line} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                   <div style={{ width: '4px', height: '4px', borderRadius: '50%', background: C.accent, flexShrink: 0, marginTop: '8px', opacity: 0.7 }} />
@@ -283,19 +275,27 @@ export function Resume() {
             {/* Technical Skills */}
             <SectionHeader label="Technical Skills" />
             <div style={{ marginBottom: '36px' }}>
-              {techStack.map((group) => (
-                <div key={group.category} style={{ marginBottom: '16px' }}>
-                  <p style={{
-                    fontSize: '10px',
+              {techStack.map((group, gIdx) => (
+                <div key={group.category} style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0',
+                  marginBottom: gIdx < techStack.length - 1 ? '12px' : '0',
+                  flexWrap: 'wrap' as const,
+                  rowGap: '8px',
+                }}>
+                  <span style={{
+                    fontSize: '9.5px',
                     fontWeight: 600,
                     letterSpacing: '0.07em',
                     textTransform: 'uppercase' as const,
                     color: C.subtle,
-                    margin: '0 0 8px',
-                  }}>{group.category}</p>
-                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '6px' }}>
+                    width: '108px',
+                    flexShrink: 0,
+                  }}>{group.category}</span>
+                  <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '18px', alignItems: 'center' }}>
                     {group.items.map((item) => (
-                      <TechChip key={item.name} name={item.name} icon={item.icon} />
+                      <TechItem key={item.name} name={item.name} icon={item.icon} />
                     ))}
                   </div>
                 </div>
