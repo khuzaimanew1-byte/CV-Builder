@@ -316,7 +316,7 @@ export function Resume() {
             borderRight: `1px solid ${C.divider}`,
           }}>
 
-            <SectionHeader label="Core Technologies" />
+            <SectionHeader label="Technical Skills" />
             <div style={{ marginBottom: '40px' }}>
               {techStack.map((group) => (
                 <div key={group.category} style={{ marginBottom: '20px' }}>
