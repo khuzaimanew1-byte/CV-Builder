@@ -375,7 +375,7 @@ export function Resume() {
                 borderRadius: '5px',
               }}>
                 <span style={{ width: 5, height: 5, borderRadius: '50%', background: C.accent, display: 'inline-block' }} />
-                <span style={{ fontSize: '11px', fontWeight: 600, color: C.accent, letterSpacing: '0.02em' }}>1+ Year</span>
+                <span style={{ fontSize: '11px', fontWeight: 600, color: C.accent, letterSpacing: '0.02em' }}>1+ Year Experience</span>
               </div>
             </div>
 
