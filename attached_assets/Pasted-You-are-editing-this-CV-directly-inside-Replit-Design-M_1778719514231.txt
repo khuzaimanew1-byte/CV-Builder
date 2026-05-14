@@ -1,0 +1,273 @@
+You are editing this CV directly inside Replit Design Mode.
+
+IMPORTANT:
+Do NOT redesign from scratch.
+Do NOT generate a completely new template.
+Keep the current modern structure.
+
+Your task is to CLEAN, SIMPLIFY, and UPGRADE the current resume into a highly effective premium modern developer CV.
+
+The current CV has too much unnecessary text, weak hierarchy, awkward sections, and information overload.
+
+Your goal is:
+- remove unnecessary content
+- reduce visual noise
+- improve architecture
+- improve recruiter readability
+- create strong 3-second impact
+- make the profile feel premium and authentic
+
+--------------------------------------------------
+MAIN DESIGN GOAL
+--------------------------------------------------
+
+The final CV should feel like:
+- modern startup developer profile
+- calm and intelligent
+- visually premium
+- minimalist but memorable
+- structured and clean
+- Apple/Linear/Vercel inspired
+
+NOT:
+- AI-generated
+- overloaded
+- futuristic fantasy
+- Canva infographic
+- corporate template
+- student assignment
+
+--------------------------------------------------
+1. REMOVE UNNECESSARY TEXT
+--------------------------------------------------
+
+Aggressively reduce unnecessary wording.
+
+REMOVE:
+- repetitive sentences
+- overexplaining
+- generic AI wording
+- filler descriptions
+- fake startup-style language
+- vague project explanations
+- unnecessary labels
+- duplicated information
+
+Keep ONLY:
+- important identity signals
+- practical technical direction
+- concise professional wording
+
+Every sentence should feel intentional.
+
+--------------------------------------------------
+2. SHORTEN THE INTRO
+--------------------------------------------------
+
+The intro is currently too long and weak.
+
+Replace it with ONLY this:
+
+"IT & Cybersecurity student focused on web development, practical digital solutions, and modern technologies.
+
+Passionate about building innovative systems through independent learning and experimentation."
+
+ONLY 2 SHORT LINES.
+
+Make it:
+- clean
+- calm
+- readable
+- premium
+
+No large paragraph blocks.
+
+--------------------------------------------------
+3. REMOVE FAKE PROJECT STRUCTURE
+--------------------------------------------------
+
+Delete:
+- fake project titles
+- AI-generated sounding descriptions
+- unrealistic startup wording
+
+Replace the entire section with:
+
+"Development Focus"
+
+Then ONLY show:
+
+• Web Application Development  
+• Mobile App Experimentation  
+• AI Workflow Exploration  
+• Productive Digital Systems  
+
+Simple.
+Authentic.
+Professional.
+
+--------------------------------------------------
+4. CLEAN THE RIGHT SIDEBAR
+--------------------------------------------------
+
+The sidebar currently feels cluttered and disconnected.
+
+Reduce it to ONLY:
+- Education
+- Experience
+- Languages
+- Current Learning
+
+Remove unnecessary spacing and weak labels.
+
+Make it:
+- compact
+- premium
+- structured
+- visually balanced
+
+--------------------------------------------------
+5. REMOVE VISUAL CLUTTER
+--------------------------------------------------
+
+Reduce:
+- unnecessary divider lines
+- excessive spacing
+- too many visual boxes
+- oversized chips
+- overused blue accents
+- unnecessary icons
+
+The design should breathe naturally.
+
+--------------------------------------------------
+6. FIX COLOR USAGE
+--------------------------------------------------
+
+Currently blue is overused.
+
+Use #355CDE ONLY for:
+- role title
+- section headings
+- subtle highlights
+- icons
+- language bars
+- chip text
+
+Do NOT make the entire resume blue.
+
+Main text should remain:
+#111827 or #4B5563
+
+--------------------------------------------------
+7. IMPROVE TECHNOLOGY SECTION
+--------------------------------------------------
+
+Keep technology chips smaller and cleaner.
+
+Use:
+Background:
+#EEF4FF
+
+Text:
+#355CDE
+
+Border:
+#D6E4FF
+
+Make them feel:
+- premium
+- minimal
+- organized
+
+NOT:
+- large
+- noisy
+- colorful
+
+--------------------------------------------------
+8. FIX THE TOP SECTION
+--------------------------------------------------
+
+The hero section must instantly communicate:
+
+1. Name
+2. Role
+3. Identity
+4. Contact Info
+
+WITHOUT visual confusion.
+
+Structure:
+
+[Khuzaima Asif]        [Image]
+
+Full Stack Web Developer
+
+Short intro...
+
+📧 Email   📱 Phone   📍 Pakistan
+
+Make contact info INLINE.
+NOT bullet lists.
+
+--------------------------------------------------
+9. IMPROVE THE IMAGE
+--------------------------------------------------
+
+The image currently feels too sharp.
+
+Apply:
+- softer black & white
+OR
+- slight desaturation
+
+Reduce:
+- harsh contrast
+- heavy ring emphasis
+
+The image should feel:
+- calm
+- editorial
+- professional
+
+--------------------------------------------------
+10. MAKE THE CV FEEL EXPENSIVE
+--------------------------------------------------
+
+Do NOT use flashy effects.
+
+Create premium feel using:
+- spacing rhythm
+- typography hierarchy
+- alignment precision
+- subtle contrast
+- restrained color usage
+
+The design should subconsciously communicate:
+- intelligence
+- calm confidence
+- modern developer identity
+- independent builder mindset
+
+--------------------------------------------------
+11. FINAL RESULT
+--------------------------------------------------
+
+The final CV should:
+- contain LESS text
+- feel MORE professional
+- scan faster
+- look cleaner
+- feel more authentic
+- feel more modern
+- be recruiter-friendly
+- have strong 3-second impact
+
+The recruiter should instantly understand:
+- who I am
+- what I do
+- my technical direction
+- my professionalism
+
+WITHOUT reading large paragraphs.
