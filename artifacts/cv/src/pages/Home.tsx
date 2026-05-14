@@ -204,12 +204,17 @@ export default function Home() {
           }
           #cv-root {
             width: 210mm !important;
-            height: 297mm !important;
+            min-height: 297mm !important;
             margin: 0 !important;
             padding: 0 !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
+            display: block !important;
+            background: #F7F7F5 !important;
+          }
+          #cv-root > div {
+            max-width: 100% !important;
+            width: 210mm !important;
+            margin: 0 !important;
+            padding: 0 !important;
             background: #F7F7F5 !important;
           }
         }
