@@ -1,4 +1,5 @@
-import { Mail, PhoneCall, MapPin, Lightbulb, Brain, Focus, Code2, Search, Sparkles } from 'lucide-react';
+import React from 'react';
+import { Mail, PhoneCall, MapPin, Lightbulb, Brain, Focus, Code2, Search, Sparkles, GraduationCap } from 'lucide-react';
 
 const C = {
   bg:         '#F7F7F5',
@@ -119,16 +120,20 @@ function SectionHeader({ label }: { label: string }) {
   );
 }
 
-function SectionHeaderSmall({ label }: { label: string }) {
+function SectionHeaderSmall({ label, icon: Icon }: { label: string; icon?: React.ElementType }) {
   return (
-    <p style={{
-      fontSize: '9.5px',
-      fontWeight: 700,
-      letterSpacing: '0.09em',
-      textTransform: 'uppercase' as const,
-      color: C.accent,
-      margin: '0 0 12px',
-    }}>{label}</p>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '14px' }}>
+      {Icon && <Icon size={12} strokeWidth={2} style={{ color: C.accent, opacity: 0.85, flexShrink: 0 }} />}
+      <p style={{
+        fontSize: '10px',
+        fontWeight: 700,
+        letterSpacing: '0.1em',
+        textTransform: 'uppercase' as const,
+        color: C.accent,
+        margin: 0,
+      }}>{label}</p>
+      <div style={{ flex: 1, height: '1px', background: C.divider, marginLeft: '4px' }} />
+    </div>
   );
 }
 
@@ -363,24 +368,24 @@ export default function Home() {
               display: 'flex',
               flexDirection: 'column',
             }}>
-              <SectionHeaderSmall label="Education" />
-              <div style={{ marginBottom: '28px' }}>
-                <p style={{ fontSize: '13px', fontWeight: 600, color: C.heading, margin: '0 0 3px', letterSpacing: '-0.01em' }}>
+              <SectionHeaderSmall label="Education" icon={GraduationCap} />
+              <div style={{ marginBottom: '36px' }}>
+                <p style={{ fontSize: '14px', fontWeight: 700, color: C.heading, margin: '0 0 5px', letterSpacing: '-0.02em', lineHeight: 1.3 }}>
                   UK Level-3 Diploma
                 </p>
-                <p style={{ fontSize: '12px', color: C.body, margin: '0 0 2px', lineHeight: 1.5, fontWeight: 400 }}>
+                <p style={{ fontSize: '12.5px', color: C.body, margin: '0 0 3px', lineHeight: 1.6, fontWeight: 500 }}>
                   IT &amp; Cybersecurity
                 </p>
-                <p style={{ fontSize: '12px', color: C.meta, margin: '0 0 4px', fontWeight: 400 }}>
+                <p style={{ fontSize: '11.5px', color: C.meta, margin: '0 0 6px', fontWeight: 400, lineHeight: 1.5 }}>
                   Superior College, Bahawalpur
                 </p>
-                <p style={{ fontSize: '11px', color: C.subtle, margin: 0, fontWeight: 500, letterSpacing: '0.02em' }}>
+                <p style={{ fontSize: '10.5px', color: C.subtle, margin: 0, fontWeight: 500, letterSpacing: '0.03em' }}>
                   Jun 2025 – 2026
                 </p>
               </div>
 
               <SectionHeaderSmall label="Experience" />
-              <div style={{ marginBottom: '28px' }}>
+              <div style={{ marginBottom: '36px' }}>
                 <p style={{ fontSize: '13px', fontWeight: 600, color: C.heading, margin: '0 0 3px', letterSpacing: '-0.01em' }}>
                   Full Stack Developer
                 </p>
@@ -401,7 +406,7 @@ export default function Home() {
               </div>
 
               <SectionHeaderSmall label="Languages" />
-              <div style={{ marginBottom: '28px' }}>
+              <div style={{ marginBottom: '36px' }}>
                 {languages.map((l) => (
                   <div key={l.lang} style={{ marginBottom: '13px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
